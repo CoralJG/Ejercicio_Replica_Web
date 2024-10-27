@@ -1,124 +1,123 @@
-*{
-    padding: 0px;
-    margin: 0px;
+* {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
+
 /*HERO*/
-.hero{
+.hero {
     background-image: url('welcome-hero/welcome-banner.jpg');
     background-position: center;
     background-size: cover;
     position: relative;
     width: 100%;
-    height: 800px;
+    height: 100vh;
     opacity: 90%;
-    
 }
-.shadow{
-    background-color: rgb(0,0,255,0.2);
-    height: 800px;
+
+.shadow {
+    background-color: rgba(12, 33, 107, 0.424);
+    height: 100%;
     width: 100%;
     position: absolute;
-    z-index: 2;
     top: 0;
-    opacity: 100%;
 }
-.hero h1{
+
+.carvilla {
     font-family: 'Courier New', Courier, monospace;
     color: white;
     font-weight: bolder;
-    margin-top: 20px;
-    margin-left: 90px;
+    margin: 50px 90px -20px;
+    font-size: 40px;
 }
 
-.hero ul{
+.hero ul {
     display: flex;
     justify-content: center;
     gap: 20px;
     margin-left: 345px;
-}
-.hero li{
-   list-style: none;
-   color: white;
+    list-style: none;
 }
 
-.hero li:hover{
+.hero li {
+    color: white;
     cursor: pointer;
+}
+
+.hero li:hover {
     color: rgb(114, 117, 243);
 }
 
 /*HERO-BOX*/
-.box{
-    margin-top: 210px;
+.box {
+    margin-top: 25vh;
     text-align: center;
-}
-.box h1 {
     color: white;
-    margin-bottom: 40px;
-    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box h1 {
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bolder;
+    margin: auto auto 20px;
+    font-size: 40px;
 }
 
 .box p {
-    color: white;
     text-align: center;
-    margin:auto; /*margen auto para ponerlo debajo*/
-    max-width: 540px; /*Para alinear con tamaño justificado*/
+    margin: auto;
+    max-width: 540px;
     margin-bottom: 40px;
 }
 
 .contact {
-    padding: 10px 40px; /*width height alto ancho*/
-    background-color:  rgb(71, 59, 245);
+    padding: 10px 40px;
+    width: 190px;
+    height: 50px;
+    background-color: rgb(71, 59, 245);
     border: none;
     color: white;
-    border-radius: 2px;
+    border-radius: 5px;
     cursor: pointer;
     margin-top: 10px;
+    font-weight: bold;
 }
 
 .contact:hover {
-    background-color:rgb(57, 46, 206);
+    background-color: rgb(57, 46, 206);
 }
-
 
 /*Form*/
-
-.up{
-    position: absolute;
+.up {
+    position: relative;
+    padding: 20px;
     background-color: rgb(255, 255, 255);
-    width: 60%;
+    width: 80%;
+    max-width: 900px;
     height: 250px;
-    margin-top: -160px;
-    margin-left: 345px;
-    box-shadow: 0 4px 15px rgb(0, 0, 0,0.2);
-    
+    margin: -160px auto 0; /*-160 = margen superior, auto = izq y derech, 0 = margen inferior*/
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-.form{
-    margin-top: 50px;
-}
-
-.grid-up{
+.grid-up {
     display: grid;
     grid-template-columns: 20% 20% 25%;
     grid-template-rows: 50px 100px;
     gap: 40px;
-    float: left;
-    margin-left: 100px;
+    margin: 20px 100px auto;
 }
 
-
 select {
-   background-color: rgb(185, 184, 184);
-   padding: 10px;
-   width: 150px;
-   border: none;
-   opacity: 30%;
+    background-color: rgb(185, 184, 184);
+    padding: 10px;
+    width: 150px;
+    border: none;
+    opacity: 30%;
 }
 
 .search {
-    padding: 20px 50px;
-    background-color:  rgb(71, 59, 245);
+    padding: 10px 50px;
+    background-color: rgb(71, 59, 245);
     border: none;
     color: white;
     border-radius: 4px;
@@ -129,25 +128,127 @@ select {
 }
 
 .search:hover {
-    background-color:rgb(57, 46, 206);
+    background-color: rgb(57, 46, 206);
 }
 
 /*Services*/
-
-.services{
-    display: grid;
-    grid-template-columns: 20% 20% 20%;
-    grid-template-rows: 50px 100px;
-    gap: 20px;
-    margin-top: 150px;
-    margin-left: 80px;
+.services {
+    display: flex;
     justify-content: center;
-    margin-bottom: 20px;
-
+    gap: 20px;
+    padding: 20px;
+    margin: auto auto 70px;
 }
 
-.card{
-    border: 1px solid rgb(150, 150, 150);
-    width: 300px;
-    height: 200px;
+.card {
+    border: 1px solid rgb(211, 211, 211);
+    width: 100%;
+    max-width: 300px;
+    height: 350px;
+    text-align: center;
+}
+
+.imgs {
+    width: 70px;
+    height: 70px;
+    margin: 40px auto 40px;
+    opacity: 60%;
+}
+
+.card h1{
+    color: rgb(74, 74, 74);
+    margin: auto auto 20px;
+}
+
+.card p{
+    margin: auto auto auto; /*Top, izq, derech, bottom */
+    color: rgb(140, 140, 140);
+    font-weight: 600;
+}
+
+.card hr{
+    margin: 80px auto auto;
+    width: 20px;
+    border: 1px solid blue;
+}
+
+/*New-cars*/
+
+.new-cars{
+    padding: 40px;
+    max-width: 100%;
+    height: 700px;
+    background-color: rgb(214, 212, 212, 0.16);
+}
+
+.box1{
+    display: grid;
+    justify-content: center;
+}
+
+.box1 p{
+    text-align: center;
+    font-size:large;
+    margin: auto auto 20px;
+    color: rgb(54, 53, 53);
+}
+
+.box1 h1{
+    text-align: center;
+    font-size:xx-large;
+    margin: auto auto 20px;
+    color: rgb(56, 56, 56);
+}
+
+.box1 hr{
+    border: 0.5px solid rgb(0, 0, 255);
+    margin: auto auto 80px;
+    width: 60px;
+}
+
+.box2{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    color: rgb(116, 113, 113);
+}
+
+.box2 h1{
+    font-size:xx-large;
+    margin: auto auto 20px;
+    color: rgb(56, 56, 56);
+}
+
+.box2 p{
+    margin: auto auto;
+    max-width: 400px;
+    margin: auto auto 20px;
+}
+
+.view-details{
+    padding: 20px 30px;
+    background-color: rgb(71, 59, 245);
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.dots {
+    color: rgb(116, 113, 113);
+    margin: 100px 800px;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    background-color: rgb(156, 156, 156);
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: rgb(102, 102, 102);
 }
