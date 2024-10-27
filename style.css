@@ -56,7 +56,7 @@
 }
 
 .box h1 {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: white;
     font-weight: bolder;
     margin: auto auto 20px;
@@ -95,7 +95,8 @@
     width: 80%;
     max-width: 900px;
     height: 250px;
-    margin: -160px auto 0; /*-160 = margen superior, auto = izq y derech, 0 = margen inferior*/
+    margin: -160px auto 60px;
+    /*-160 = margen superior, auto = izq y derech, 60 = margen inferior*/
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -116,13 +117,13 @@ select {
 }
 
 .search {
-    padding: 10px 50px;
+    padding: 20px 60px;
     background-color: rgb(71, 59, 245);
     border: none;
     color: white;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
-    margin-left: 600px;
+    margin-left: 550px;
     position: absolute;
     margin-top: -165px;
 }
@@ -155,18 +156,19 @@ select {
     opacity: 60%;
 }
 
-.card h1{
+.card h1 {
     color: rgb(74, 74, 74);
     margin: auto auto 20px;
 }
 
-.card p{
-    margin: auto auto auto; /*Top, izq, derech, bottom */
+.card p {
+    margin: auto auto auto;
+    /*Top, izq, derech, bottom */
     color: rgb(140, 140, 140);
     font-weight: 600;
 }
 
-.card hr{
+.card hr {
     margin: 80px auto auto;
     width: 20px;
     border: 1px solid blue;
@@ -174,58 +176,59 @@ select {
 
 /*New-cars*/
 
-.new-cars{
+.new-cars {
     padding: 40px;
     max-width: 100%;
-    height: 700px;
+    height: 760px;
     background-color: rgb(214, 212, 212, 0.16);
+    margin: auto auto auto;
 }
 
-.box1{
+.box1 {
     display: grid;
     justify-content: center;
 }
 
-.box1 p{
+.box1 p {
     text-align: center;
-    font-size:large;
+    font-size: large;
     margin: auto auto 20px;
     color: rgb(54, 53, 53);
 }
 
-.box1 h1{
+.box1 h1 {
     text-align: center;
-    font-size:xx-large;
+    font-size: xx-large;
     margin: auto auto 20px;
     color: rgb(56, 56, 56);
 }
 
-.box1 hr{
+.box1 hr {
     border: 0.5px solid rgb(0, 0, 255);
     margin: auto auto 80px;
-    width: 60px;
+    width: 90px;
 }
 
-.box2{
+.box2 {
     display: flex;
     justify-content: center;
     gap: 20px;
     color: rgb(116, 113, 113);
 }
 
-.box2 h1{
-    font-size:xx-large;
+.box2 h1 {
+    font-size: xx-large;
     margin: auto auto 20px;
     color: rgb(56, 56, 56);
 }
 
-.box2 p{
+.box2 p {
     margin: auto auto;
     max-width: 400px;
     margin: auto auto 20px;
 }
 
-.view-details{
+.view-details {
     padding: 20px 30px;
     background-color: rgb(71, 59, 245);
     border: none;
@@ -235,20 +238,72 @@ select {
 }
 
 .dots {
-    color: rgb(116, 113, 113);
-    margin: 100px 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    gap: 10px;
+    margin: 100px auto;
 }
 
 .dot {
     display: inline-block;
     width: 10px;
     height: 10px;
-    margin: 5px;
-    background-color: rgb(156, 156, 156);
-    border-radius: 100px;
+    background-color: rgb(176, 176, 176);
+    border-radius: 50%;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .dot.active {
     background-color: rgb(102, 102, 102);
+}
+
+/*Featured-cars*/
+
+.featured-cars{
+    padding: 10% 15%;
+}
+
+.grid-fcars {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: fit-content;
+}
+
+.fcars {
+    display: flex;
+    margin: 0 20px 20px;
+    border: 1px solid rgb(218, 218, 218);
+    width: 294px;
+    height: 280px;
+    color: rgb(148, 148, 148);
+}
+
+.car-card {
+    align-items: center;
+    margin: 60px 0 0 40px;
+}
+
+.car-card hr {
+    margin: 30px -40px 10px;
+    width: 294px;
+    border: 1px solid rgb(218, 218, 218);
+}
+
+.line {
+    display: flex;
+    gap: 10px;
+    margin: 10px -39px;
+}
+
+
+.line2 {
+    max-width: 294px;
+    margin: 0 20px 20px;
+}
+
+.line2 p {
+    color: rgb(148, 148, 148);
 }
