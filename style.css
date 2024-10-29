@@ -314,3 +314,36 @@ select {
 .line2 p {
     color: rgb(148, 148, 148);
 }
+
+/*CLIENTS*/
+
+.grid-clients{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	max-width: fit-content;
+	margin: auto 500px;
+	gap: 40px;
+}
+.clients-card img{
+	margin: 40px;
+}
+
+.clients-card{
+	border: 1px solid rgb(211, 211, 211);
+    width: fit-content;
+    height: 350px;
+    text-align: center;
+	margin: 10px 10px 1px;
+}
+
+.clients-card p{
+	margin: -20px 20px 30px;
+}
+
+/*BRANDS*/
+
+.grid-brand{
+	display: flex;
+	justify-content: center;
+	gap: 60px;
+}
