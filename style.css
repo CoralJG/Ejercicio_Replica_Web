@@ -262,7 +262,7 @@ select {
 
 /*Featured-cars*/
 
-.featured-cars{
+.featured-cars {
     padding: 10% 15%;
 }
 
@@ -283,15 +283,15 @@ select {
 
 .car-card {
     display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin: auto auto 2px;
+    flex-direction: column;
+    align-items: center;
+    margin: auto auto 2px;
 }
 
-.car-card img{
-	width: 160px;
-	height: 90px;
-	margin: auto auto 40px;
+.car-card img {
+    width: 160px;
+    height: 90px;
+    margin: auto auto 40px;
 }
 
 .car-card hr {
@@ -302,7 +302,7 @@ select {
 
 .line p {
     display: flex;
-    margin: 5px -140px ;
+    margin: 5px -140px;
 }
 
 
@@ -317,33 +317,127 @@ select {
 
 /*CLIENTS*/
 
-.grid-clients{
-	display: grid;
-	grid-template-columns: repeat(3,1fr);
-	max-width: fit-content;
-	margin: auto 500px;
-	gap: 40px;
-}
-.clients-card img{
-	margin: 40px;
+.clients {
+    background-color: rgb(243, 243, 243);
+    height: 650px;
 }
 
-.clients-card{
-	border: 1px solid rgb(211, 211, 211);
-    width: fit-content;
-    height: 350px;
+.clients div h1 {
+    padding: 50px;
+    margin: auto auto -20px;
+}
+
+.grid-clients {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto 500px;
+    gap: 40px;
+}
+
+.clients-card img {
+    margin: 40px;
+}
+
+.clients-card {
+    border: 1px solid rgb(211, 211, 211);
+    height: 300px;
     text-align: center;
-	margin: 10px 10px 1px;
+    margin: 10px auto 1px;
 }
 
-.clients-card p{
-	margin: -20px 20px 30px;
+.clients-card p {
+    margin: -20px 20px 30px;
 }
 
 /*BRANDS*/
 
-.grid-brand{
-	display: flex;
-	justify-content: center;
-	gap: 60px;
+.grid-brand {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin: 150px;
+}
+
+/*FOOTER*/
+
+.grid-footer {
+    background-color: rgb(41, 41, 112, 0.9);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: fit-content;
+
+}
+
+.grid-footer h1 {
+    color: white;
+    font-size: x-large;
+    margin: auto auto 20px;
+}
+
+.footer-1 {
+    margin: 70px;
+    color: rgb(255, 255, 255);
+}
+
+.footer-2 {
+    margin: 70px;
+    color: rgba(255, 255, 255, 0.735);
+}
+
+.footer-2 p {
+    margin: 10px;
+}
+
+.footer-3 {
+    margin: 70px;
+    color: rgba(255, 255, 255, 0.735);
+    display: flex;
+    gap: 10px;
+}
+
+.footer-3 p {
+    margin: 10px;
+}
+
+.brand-2 {
+    margin: 40px auto;
+}
+
+.footer-4 {
+    margin: 70px;
+    color: rgba(255, 255, 255, 0.735);
+}
+
+.footer-4 input {
+    width: 200px;
+    height: 30px;
+    border: none;
+    box-shadow: 0 1px 5px;
+    background-color: rgba(41, 41, 112, 0.9);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+}
+
+/*FINAL*/
+
+.final {
+    background-color: rgba(41, 41, 112, 0.9);
+}
+
+.final-5 {
+    color: rgba(255, 255, 255, 0.735);
+    display: flex;
+    gap: 130vh;
+    padding: 20px;
+    margin: auto 40px;
+}
+
+.final-5 hr {
+    border-color: rgba(207, 207, 207, 0.212);
+    width: 95%;
+}
+
+.social-media {
+    display: flex;
+    gap: 20px;
 }
