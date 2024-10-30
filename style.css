@@ -1,443 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/*MAIN*/
+main {
+	font-family: "Poppins", sans-serif;
+	font-weight: 200;
+	font-style: normal;
+	font-size: small;
 }
 
 /*HERO*/
 .hero {
-    background-image: url('welcome-hero/welcome-banner.jpg');
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    opacity: 90%;
+	background-image: url('welcome-hero/welcome-banner.jpg');
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	opacity: 90%;
 }
 
 .shadow {
-    background-color: rgba(12, 33, 107, 0.424);
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
+	background-color: rgba(12, 33, 107, 0.424);
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
 }
 
 .carvilla {
-    font-family: 'Courier New', Courier, monospace;
-    color: white;
-    font-weight: bolder;
-    margin: 50px 90px -20px;
-    font-size: 40px;
+	color: white;
+	font-weight: bolder;
+	margin: 50px 90px -20px;
+	font-size: 40px;
 }
 
 .hero ul {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-left: 345px;
-    list-style: none;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	margin-left: 345px;
+	list-style: none;
 }
 
 .hero li {
-    color: white;
-    cursor: pointer;
+	color: white;
+	cursor: pointer;
 }
 
 .hero li:hover {
-    color: rgb(114, 117, 243);
+	color: rgb(114, 117, 243);
 }
 
 /*HERO-BOX*/
 .box {
-    margin-top: 25vh;
-    text-align: center;
-    color: white;
+	margin-top: 25vh;
+	text-align: center;
+	color: white;
 }
 
 .box h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    font-weight: bolder;
-    margin: auto auto 20px;
-    font-size: 40px;
+	color: white;
+	font-weight: bolder;
+	margin: auto auto 20px;
+	font-size: 40px;
 }
 
 .box p {
-    text-align: center;
-    margin: auto;
-    max-width: 540px;
-    margin-bottom: 40px;
+	text-align: center;
+	margin: auto;
+	max-width: 540px;
+	margin-bottom: 40px;
 }
 
 .contact {
-    padding: 10px 40px;
-    width: 190px;
-    height: 50px;
-    background-color: rgb(71, 59, 245);
-    border: none;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-    font-weight: bold;
+	padding: 10px 40px;
+	width: 190px;
+	height: 50px;
+	background-color: rgb(71, 59, 245);
+	border: none;
+	color: white;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-top: 10px;
+	font-weight: bold;
 }
 
 .contact:hover {
-    background-color: rgb(57, 46, 206);
+	background-color: rgb(57, 46, 206);
 }
 
 /*Form*/
 .up {
-    position: relative;
-    padding: 20px;
-    background-color: rgb(255, 255, 255);
-    width: 80%;
-    max-width: 900px;
-    height: 250px;
-    margin: -160px auto 60px;
-    /*-160 = margen superior, auto = izq y derech, 60 = margen inferior*/
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+	position: relative;
+	padding: 20px;
+	background-color: rgb(255, 255, 255);
+	width: 80%;
+	max-width: 900px;
+	height: 250px;
+	margin: -160px auto 60px;
+	/*-160 = margen superior, auto = izq y derech, 60 = margen inferior*/
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .grid-up {
-    display: grid;
-    grid-template-columns: 20% 20% 25%;
-    grid-template-rows: 50px 100px;
-    gap: 40px;
-    margin: 20px 100px auto;
+	display: grid;
+	grid-template-columns: 20% 20% 25%;
+	grid-template-rows: 50px 100px;
+	gap: 40px;
+	margin: 20px 100px auto;
 }
 
 select {
-    background-color: rgb(185, 184, 184);
-    padding: 10px;
-    width: 150px;
-    border: none;
-    opacity: 30%;
+	background-color: rgb(185, 184, 184);
+	padding: 10px;
+	width: 150px;
+	border: none;
+	opacity: 30%;
 }
 
 .search {
-    padding: 20px 60px;
-    background-color: rgb(71, 59, 245);
-    border: none;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-left: 550px;
-    position: absolute;
-    margin-top: -165px;
+	padding: 20px 60px;
+	background-color: rgb(71, 59, 245);
+	border: none;
+	color: white;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-left: 550px;
+	position: absolute;
+	margin-top: -165px;
 }
 
 .search:hover {
-    background-color: rgb(57, 46, 206);
+	background-color: rgb(57, 46, 206);
 }
 
 /*Services*/
 .services {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-    margin: auto auto 70px;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	padding: 20px;
+	margin: auto auto 70px;
 }
 
 .card {
-    border: 1px solid rgb(211, 211, 211);
-    width: 100%;
-    max-width: 300px;
-    height: 350px;
-    text-align: center;
+	border: 1px solid rgb(211, 211, 211);
+	width: 100%;
+	max-width: 300px;
+	height: 350px;
+	text-align: center;
 }
 
 .imgs {
-    width: 70px;
-    height: 70px;
-    margin: 40px auto 40px;
-    opacity: 60%;
+	width: 70px;
+	height: 70px;
+	margin: 40px auto 40px;
+	opacity: 60%;
 }
 
 .card h1 {
-    color: rgb(74, 74, 74);
-    margin: auto auto 20px;
+	color: rgb(74, 74, 74);
+	margin: auto auto 20px;
 }
 
 .card p {
-    margin: auto auto auto;
-    /*Top, izq, derech, bottom */
-    color: rgb(140, 140, 140);
-    font-weight: 600;
+	margin: auto auto auto;
+	/*Top, izq, derech, bottom */
+	color: rgb(140, 140, 140);
+	font-weight: 600;
 }
 
 .card hr {
-    margin: 80px auto auto;
-    width: 20px;
-    border: 1px solid blue;
+	margin: 80px auto auto;
+	width: 20px;
+	border: 1px solid blue;
 }
 
 /*New-cars*/
 
 .new-cars {
-    padding: 40px;
-    max-width: 100%;
-    height: 760px;
-    background-color: rgb(214, 212, 212, 0.16);
-    margin: auto auto auto;
+	padding: 40px;
+	max-width: 100%;
+	height: 760px;
+	background-color: rgb(214, 212, 212, 0.16);
+	margin: auto auto auto;
 }
 
 .box1 {
-    display: grid;
-    justify-content: center;
+	display: grid;
+	justify-content: center;
 }
 
 .box1 p {
-    text-align: center;
-    font-size: large;
-    margin: auto auto 20px;
-    color: rgb(54, 53, 53);
+	text-align: center;
+	font-size: large;
+	margin: auto auto 20px;
+	color: rgb(54, 53, 53);
 }
 
 .box1 h1 {
-    text-align: center;
-    font-size: xx-large;
-    margin: auto auto 20px;
-    color: rgb(56, 56, 56);
+	text-align: center;
+	font-size: xx-large;
+	margin: auto auto 20px;
+	color: rgb(56, 56, 56);
 }
 
 .box1 hr {
-    border: 0.5px solid rgb(0, 0, 255);
-    margin: auto auto 80px;
-    width: 90px;
+	border: 0.5px solid rgb(0, 0, 255);
+	margin: auto auto 80px;
+	width: 90px;
 }
 
 .box2 {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    color: rgb(116, 113, 113);
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	color: rgb(116, 113, 113);
 }
 
 .box2 h1 {
-    font-size: xx-large;
-    margin: auto auto 20px;
-    color: rgb(56, 56, 56);
+	font-size: xx-large;
+	margin: auto auto 20px;
+	color: rgb(56, 56, 56);
 }
 
 .box2 p {
-    margin: auto auto;
-    max-width: 400px;
-    margin: auto auto 20px;
+	margin: auto auto;
+	max-width: 400px;
+	margin: auto auto 20px;
 }
 
 .view-details {
-    padding: 20px 30px;
-    background-color: rgb(71, 59, 245);
-    border: none;
-    color: white;
-    border-radius: 4px;
-    cursor: pointer;
+	padding: 20px 30px;
+	background-color: rgb(71, 59, 245);
+	border: none;
+	color: white;
+	border-radius: 4px;
+	cursor: pointer;
 }
 
 .dots {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
-    gap: 10px;
-    margin: 100px auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 40px;
+	gap: 10px;
+	margin: 100px auto;
 }
 
 .dot {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    background-color: rgb(176, 176, 176);
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background-color: rgb(176, 176, 176);
+	border-radius: 50%;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
 }
 
 .dot.active {
-    background-color: rgb(102, 102, 102);
+	background-color: rgb(102, 102, 102);
 }
 
 /*Featured-cars*/
 
 .featured-cars {
-    padding: 10% 15%;
+	padding: 10% 15%;
 }
 
 .grid-fcars {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    max-width: fit-content;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	max-width: fit-content;
 }
 
 .fcars {
-    display: flex;
-    margin: 0 20px 20px;
-    border: 1px solid rgb(218, 218, 218);
-    width: 294px;
-    height: 280px;
-    color: rgb(148, 148, 148);
+	display: flex;
+	margin: 0 20px 20px;
+	border: 1px solid rgb(218, 218, 218);
+	width: 294px;
+	height: 280px;
+	color: rgb(148, 148, 148);
 }
 
 .car-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: auto auto 2px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: auto auto 2px;
 }
 
 .car-card img {
-    width: 160px;
-    height: 90px;
-    margin: auto auto 40px;
+	width: 160px;
+	height: 90px;
+	margin: auto auto 40px;
 }
 
 .car-card hr {
-    margin: auto auto auto;
-    width: 294px;
-    border: 1px solid rgb(218, 218, 218);
+	margin: auto auto auto;
+	width: 294px;
+	border: 1px solid rgb(218, 218, 218);
 }
 
 .line p {
-    display: flex;
-    margin: 5px -140px;
+	display: flex;
+	margin: 5px -140px;
 }
 
 
 .line2 {
-    max-width: 294px;
-    margin: 0 20px 20px;
+	max-width: 294px;
+	margin: 0 20px 20px;
 }
 
 .line2 p {
-    color: rgb(148, 148, 148);
+	color: rgb(148, 148, 148);
 }
 
 /*CLIENTS*/
 
 .clients {
-    background-color: rgb(243, 243, 243);
-    height: 650px;
+	background-color: rgb(243, 243, 243);
+	height: 650px;
 }
 
 .clients div h1 {
-    padding: 50px;
-    margin: auto auto -20px;
+	padding: 50px;
+	margin: auto auto -20px;
 }
 
 .grid-clients {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin: auto 500px;
-    gap: 40px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	margin: auto 500px;
+	gap: 40px;
 }
 
 .clients-card img {
-    margin: 40px;
+	margin: 40px;
 }
 
 .clients-card {
-    border: 1px solid rgb(211, 211, 211);
-    height: 300px;
-    text-align: center;
-    margin: 10px auto 1px;
+	border: 1px solid rgb(211, 211, 211);
+	height: 360px;
+	text-align: center;
 }
 
 .clients-card p {
-    margin: -20px 20px 30px;
+	font-size: 16px;
+	color: rgb(95, 102, 112);
+	margin: -20px 20px 30px;
 }
 
 /*BRANDS*/
 
 .grid-brand {
-    display: flex;
-    justify-content: center;
-    gap: 60px;
-    margin: 150px;
+	display: flex;
+	justify-content: center;
+	gap: 60px;
+	margin: 150px;
 }
 
 /*FOOTER*/
 
 .grid-footer {
-    background-color: rgb(41, 41, 112, 0.9);
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    max-width: fit-content;
+	background-color: rgb(41, 41, 112, 0.9);
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	max-width: fit-content;
 
 }
 
 .grid-footer h1 {
-    color: white;
-    font-size: x-large;
-    margin: auto auto 20px;
+	color: white;
+	font-size: x-large;
+	margin: auto auto 20px;
 }
 
 .footer-1 {
-    margin: 70px;
-    color: rgb(255, 255, 255);
+	margin: 70px;
+	color: rgb(255, 255, 255);
 }
 
 .footer-2 {
-    margin: 70px;
-    color: rgba(255, 255, 255, 0.735);
+	margin: 70px;
+	color: rgba(255, 255, 255, 0.735);
 }
 
 .footer-2 p {
-    margin: 10px;
+	margin: 10px;
 }
 
 .footer-3 {
-    margin: 70px;
-    color: rgba(255, 255, 255, 0.735);
-    display: flex;
-    gap: 10px;
+	margin: 70px;
+	color: rgba(255, 255, 255, 0.735);
+	display: flex;
+	gap: 10px;
 }
 
 .footer-3 p {
-    margin: 10px;
+	margin: 10px;
 }
 
 .brand-2 {
-    margin: 40px auto;
+	margin: 40px auto;
 }
 
 .footer-4 {
-    margin: 70px;
-    color: rgba(255, 255, 255, 0.735);
+	margin: 70px;
+	color: rgba(255, 255, 255, 0.735);
 }
 
 .footer-4 input {
-    width: 200px;
-    height: 30px;
-    border: none;
-    box-shadow: 0 1px 5px;
-    background-color: rgba(41, 41, 112, 0.9);
-    border-radius: 5px;
-    color: rgb(0, 0, 0);
+	width: 200px;
+	height: 30px;
+	border: none;
+	box-shadow: 0 1px 5px;
+	background-color: rgba(41, 41, 112, 0.9);
+	border-radius: 5px;
+	color: rgb(0, 0, 0);
 }
 
 /*FINAL*/
 
 .final {
-    background-color: rgba(41, 41, 112, 0.9);
+	background-color: rgba(41, 41, 112, 0.9);
 }
 
 .final-5 {
-    color: rgba(255, 255, 255, 0.735);
-    display: flex;
-    gap: 128vh;
-    padding: 20px;
-    margin: auto 40px;
+	color: rgba(255, 255, 255, 0.735);
+	display: flex;
+	gap: 128vh;
+	padding: 20px;
+	margin: auto 40px;
 }
 
 .final-5 hr {
-    border-color: rgba(207, 207, 207, 0.212);
-    width: 95%;
+	border-color: rgba(207, 207, 207, 0.212);
+	width: 95%;
 }
 
 .social-media {
-    display: flex;
-    gap: 20px;
+	display: flex;
+	gap: 20px;
+}
+
+/*Iphone 14 pro Max*/
+@media screen and (min-width: 400px) {
+	.hero {
+		width: 50vh;
+		height: 30vh;
+	}
+
+	.hero h1 {
+		margin: 20px 30%;
+	}
+
+	.hero ul {
+		display: block;
+		justify-content: center;
+		margin: 20px 40%;
+
+	}
+
+	.up{
+		position: relative;
+		margin: -9px 40px;
+	}
+	.grid-up{
+		display: block;
+	}
+
 }
