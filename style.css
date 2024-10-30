@@ -427,7 +427,7 @@ select {
 .final-5 {
     color: rgba(255, 255, 255, 0.735);
     display: flex;
-    gap: 130vh;
+    gap: 128vh;
     padding: 20px;
     margin: auto 40px;
 }
